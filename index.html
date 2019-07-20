@@ -8,6 +8,8 @@
   <meta name="description" content="description here"> -->
 
   <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" type="text/css">
+
   </head>
   <body>
 
@@ -17,27 +19,27 @@
                 <menu>
                 <ul>
                     <li class="dropdown">
-                        Destinationer
+                        Destinationer <i class="fas fa-sort-down"></i>
                         <ul class="dropdown-content">
-                            <li>Destination 1</li>
-                            <li>Destination 2</li>
-                            <li>Destination 3</li>
+                            <li><a href="#">Destination 1</a></li>
+                            <li><a href="#">Destination 2</a></li>
+                            <li><a href="#">Destination 3</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        Rejsetemaer
+                        Rejsetemaer <i class="fas fa-sort-down"></i>
                         <ul class="dropdown-content">
-                            <li>Destination 1</li>
-                            <li>Destination 2</li>
-                            <li>Destination 3</li>
+                            <li><a href="#">Destination 1</a></li>
+                            <li><a href="#">Destination 2</a></li>
+                            <li><a href="#">Destination 3</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        Inspiration
+                        Inspiration <i class="fas fa-sort-down"></i>
                         <ul class="dropdown-content">
-                            <li>Destination 1</li>
-                            <li>Destination 2</li>
-                            <li>Destination 3</li>
+                            <li><a href="#">Destination 1</a></li>
+                            <li><a href="#">Destination 2</a></li>
+                            <li><a href="#">Destination 3</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -46,73 +48,472 @@
                 <img class="logo" src="logo.jpg">
 
                 <section class="header_contact">
-                    phone number
-                    big button
+                    <span class="phone"><span id="phone_int_code">+45</span> 82 47 35 80</span>
+                    <span class="myTravel red_colour_bg">Min Rejse <i class="fas fa-chevron-right"></i> {{TV}}</span>
                 </section>
             </nav>
         </header>
 
-    <div class="page_section landing">
-        Landing page
+
+
+
+
+
+    <div class="page_section visitors_landing">
+       <div class="centered-landing">
+           <p>Bestil din rejse hos</p>
+           <img src="img/logo.jpg" alt="company logo">
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+           <p>Donec laoreet tellus nec tellus finibus rhoncus. </p>
+        </div>
+
+        <div class="landing-bottom">
+            <div class="cta_section">
+                trust pilot bit
+            </div>
+
+            <div class="cta_section">
+                Reg number 
+            </div>
+        </div>
     </div>
 
+
+
+
+
+
+
     <div class="page_section intro">
-        Some text, 3 facts
+        <div class="col-2">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                Donec laoreet tellus nec tellus finibus rhoncus. 
+                Aliquam rhoncus dapibus augue ut sodales. Integer facilisis iaculis velit et interdum. 
+                Ut consequat pulvinar rutrum. Phasellus ultricies in nunc id malesuada.
+            </p>
+        </div>
+        <div class="footer_box_cta cta_section">
+            <h6>light grey small</h6>
+            <p>Text big black </p>
+            
+            <h6>light grey small</h6>
+            <p>Text big black </p> 
+
+            <h6>light grey small</h6>
+            <p>Text big black </p> 
+        </div>
     </div>
+
+
+
+
+
+
 
     <div class="page_section map">
         the map with markers.
     </div>
 
-    <div class="page_section pop_rejser">
-        Populære rejser
+
+
+
+
+
+
+
+    <div class="page_section popular_trips">
+        <div class="text_box_left">
+            <h1> Populære rejser</h1>
+            <span>red line</span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                Donec laoreet tellus nec tellus finibus rhoncus. 
+                Aliquam rhoncus dapibus augue ut sodales. Integer facilisis iaculis velit et interdum. 
+                Ut consequat pulvinar rutrum. Phasellus ultricies in nunc id malesuada.
+            </p>
+        </div>
+
+        <div class="">
+            some kinda side scrolling thingie... with big images etc.
+        </div>
     </div>
+
+
+
+
+
+
+
 
     <div class="page_section be_inspired">
-        Bliv inspireret af vores artikler
-
-        blog style posts.
+            <div class="text_box_left">
+                    <h1>Heading 1</h1>
+                    <span>red line</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                        Donec laoreet tellus nec tellus finibus rhoncus. 
+                        Aliquam rhoncus dapibus augue ut sodales. Integer facilisis iaculis velit et interdum. 
+                        Ut consequat pulvinar rutrum. Phasellus ultricies in nunc id malesuada.
+                    </p>
+            </div>
+        
+                <div class="our_team">
+                    <div class="team_row">
+                        <div class="team_member_wrapper">
+                            <img src="img/team/team1.jpg" alt="name">
+                            <div class="team_member_details">
+                                <h4>Signe Hansen</h4>
+                                <h4 class="our_team_sub_title">Rejsekonsulent</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                                    Donec laoreet tellus nec tellus finibus rhoncus. Aliquam rhoncus dapibus.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="team_member_wrapper">
+                            <img src="img/team/team1.jpg" alt="name">
+                            <div class="team_member_details">
+                                <h4>Signe Hansen</h4>
+                                <h4 class="our_team_sub_title">Rejsekonsulent</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                                    Donec laoreet tellus nec tellus finibus rhoncus. Aliquam rhoncus dapibus. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="team_row cta_section">
+                        <div class="team_member_wrapper">
+                            <img src="img/team/team1.jpg" alt="name">
+                            <div class="team_member_details">
+                                <h4>Signe Hansen</h4>
+                                <h4 class="our_team_sub_title">Rejsekonsulent</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                                    Donec laoreet tellus nec tellus finibus rhoncus. Aliquam rhoncus dapibus.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="team_member_wrapper">
+                            <img src="img/team/team1.jpg" alt="name">
+                            <div class="team_member_details">
+                                <h4>Signe Hansen</h4>
+                                <h4 class="our_team_sub_title">Rejsekonsulent</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                                    Donec laoreet tellus nec tellus finibus rhoncus. Aliquam rhoncus dapibus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end our team -->
     </div>
+
+
+
+
+
+
+
 
     <div class="page_section quote">
+        <div class="col-2">
+            author bit
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                Donec laoreet tellus nec tellus finibus rhoncus. 
+                Aliquam rhoncus dapibus augue ut sodales. Integer facilisis iaculis velit et interdum. 
+                Ut consequat pulvinar rutrum. Phasellus ultricies in nunc id malesuada.
+            </p>
 
+            <div class="footer_box_cta cta_section">
+                <img src="" alt="">
+                <h5>red</h5>
+                <p>Text text text + arrow </p>                    
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="img/featured1.jpg">
+        </div>
     </div>
 
+
+
+
+
+
     <div class="page_section featured">
-        image + icons and text
+        <div class="col-2">
+            <img src="img/featured1.jpg">
+        </div>
+        <div class="col-2">
+            2 icons
+            
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                Donec laoreet tellus nec tellus finibus rhoncus. 
+                Aliquam rhoncus dapibus augue ut sodales. Integer facilisis iaculis velit et interdum. 
+                Ut consequat pulvinar rutrum. Phasellus ultricies in nunc id malesuada.
+            </p>
+
+            <div class="footer_box_cta cta_section">
+                <img src="" alt="">
+                <h5>red</h5>
+                <p>Text text text + arrow </p>                    
+            </div>
+        </div>
     </div>
     
 
-    <div class="page_section get_special">
-        Sådan kan vi hjælpe dig
 
-        <button>
-            Bestil tilbud >
-        </button>
+
+
+
+
+    <div class="page_section help_you">
+        <div class="text_box_left">
+            <h1>Heading 1</h1>
+            <span>red line</span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                Donec laoreet tellus nec tellus finibus rhoncus. 
+                Aliquam rhoncus dapibus augue ut sodales. Integer facilisis iaculis velit et interdum. 
+                Ut consequat pulvinar rutrum. Phasellus ultricies in nunc id malesuada.
+            </p>
+        <section class="get_offer">
+            <button>
+                Bestil tilbud >
+            </button>
+            <div class="cta_section">
+                <span class="phone"><span id="phone_int_code">+45</span> 82 47 35 80</span>                    
+            </div>
+        </section>
+        </div>
+        <div class="text_box_right">
+            Some kinda line image, could be useful to make interactive to show JS        
+        </div>
     </div>
+
+
+
+
 
 
     <div class="page_section customer_feedback">
-        Trustpilot bit
+        <div class="text_box_left">
+            <h1>Heading 1</h1>
+            <span>red line</span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                Donec laoreet tellus nec tellus finibus rhoncus. 
+                Aliquam rhoncus dapibus augue ut sodales. Integer facilisis iaculis velit et interdum. 
+                Ut consequat pulvinar rutrum. Phasellus ultricies in nunc id malesuada.
+            </p>
+        </div>
     </div>
 
-    <div class="page_section featured_two">
-        Large blog post image
+    <!-- I decided to add this as an image as you'd not normally code your own Trustpilot bit??
+        it should be accessed from Trustpilot via their API so its up to date and actually reflects how people feel
+        if you just hard code it you can lie, you can also only show the feedback you want people to see. Both undermine
+        the idea and maybe violate Trustpilots terms of use/copyright.
+    -->
+    <div class="customer_feedback_trust_pilot">
+        trust pilot bit
+        Add an image or something? Doesnt need designing 
+        <h2>Could make this a slider to show off skills??? </h2>
     </div>
 
 
-    <div class="page_section our_travel_consultants">
-        text + pictures
 
-        read more.
+
+
+    <div class="featured_two">
+        <div class="text_box_right">
+            <h2>Tag turen på route 66</h2>
+            <span>red line</span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                Donec laoreet tellus nec tellus finibus rhoncus. 
+                Aliquam rhoncus dapibus augue ut sodales. Integer facilisis iaculis velit et interdum. 
+                Ut consequat pulvinar rutrum. Phasellus ultricies in nunc id malesuada.
+            </p> 
+            <div class="cta_section">
+                some text call to action
+                a second line + arrow > 
+            </div>          
+        </div>
     </div>
 
-    <div class="page_section footer_menu">
-            footer menu
+
+
+
+
+
+
+    <div class="page_section our_team">
+        <div class="text_box_left">
+            <h1>Heading 1</h1>
+            <span>red line</span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                Donec laoreet tellus nec tellus finibus rhoncus. 
+                Aliquam rhoncus dapibus augue ut sodales. Integer facilisis iaculis velit et interdum. 
+                Ut consequat pulvinar rutrum. Phasellus ultricies in nunc id malesuada.
+            </p>
+        </div>
+
+        <div class="our_team">
+            <div class="team_row">
+                <div class="team_member_wrapper">
+                    <img src="img/team/team1.jpg" alt="name">
+                    <div class="team_member_details">
+                        <h4>Signe Hansen</h4>
+                        <h4 class="our_team_sub_title">Rejsekonsulent</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                            Donec laoreet tellus nec tellus finibus rhoncus. Aliquam rhoncus dapibus.
+                        </p>
+                    </div>
+                </div>
+                <div class="team_member_wrapper">
+                    <img src="img/team/team1.jpg" alt="name">
+                    <div class="team_member_details">
+                        <h4>Signe Hansen</h4>
+                        <h4 class="our_team_sub_title">Rejsekonsulent</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                            Donec laoreet tellus nec tellus finibus rhoncus. Aliquam rhoncus dapibus. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team_row cta_section">
+                <div class="team_member_wrapper">
+                    <img src="img/team/team1.jpg" alt="name">
+                    <div class="team_member_details">
+                        <h4>Signe Hansen</h4>
+                        <h4 class="our_team_sub_title">Rejsekonsulent</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                            Donec laoreet tellus nec tellus finibus rhoncus. Aliquam rhoncus dapibus.
+                        </p>
+                    </div>
+                </div>
+                <div class="team_member_wrapper">
+                    <img src="img/team/team1.jpg" alt="name">
+                    <div class="team_member_details">
+                        <h4>Signe Hansen</h4>
+                        <h4 class="our_team_sub_title">Rejsekonsulent</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                            Donec laoreet tellus nec tellus finibus rhoncus. Aliquam rhoncus dapibus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end our team -->
+        <div class="read_about_team red_colour_font cta_section">
+            Læse mere om vores team
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="footer_menu">
+            <div class="col-3">
+                <div class="footer_box">
+                    <h3>Header</h3>
+                    <div class="footer_box_content">
+                        bla
+                        bla
+                        blak
+                    </div>
+                    <div class="footer_box_cta cta_section">
+                        some text call to action
+                    </div>
+                </div>
+
+                <div class="footer_box">
+                        <h3>Header</h3>
+                        <div class="footer_box_content">
+                            bla
+                            bla
+                            blak
+                        </div>
+                        <div class="footer_box_cta cta_section">
+                            some text call to action
+                        </div>
+                    </div>
+            </div>
+            <div class="col-3">
+                <div class="footer_box">
+                    <div class="footer_box">
+                        <h3>Header</h3>
+                        <div class="footer_box_content">
+                            bla
+                            bla
+                            blak
+                        </div>
+                        <div class="footer_box_cta cta_section">
+                            some text call to action
+                        </div>
+                    </div>
+                    <div class="footer_box">
+                            <h3>Header</h3>
+                            <div class="footer_box_content">
+                                bla
+                                bla
+                                blak
+                            </div>
+                            <div class="footer_box_cta cta_section">
+                                some text call to action
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="footer_box">
+                    <div class="footer_box">
+                        <h3>Header</h3>
+                        <div class="footer_box_content">
+                            bla
+                            bla
+                            blak
+                        </div>
+                        <div class="footer_box_cta cta_section">
+                            some text call to action
+                        </div>
+                    </div>
+                    <div class="footer_box">
+                            <h3>Header</h3>
+                            <div class="footer_box_content">
+                                bla
+                                bla
+                                blak
+                            </div>
+                            <div class="footer_box_cta cta_section">
+                                some text call to action
+                            </div>
+                        </div>
+                </div>
+            </div>
     </div>
 
     <footer>
-        the actual footer with some text. REMEMEBER UP ARROW.
+        <section class="footer_content">
+            <span><i class="far fa-copyright"></i> 2017 USA tours. All rights reserved</span>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+        </section>
     </footer>
 
     </div> <!-- End wrapper -->
