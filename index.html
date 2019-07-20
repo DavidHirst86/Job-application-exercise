@@ -10,70 +10,79 @@
   <link rel="stylesheet" href="styles.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" type="text/css">
 
+  <script src="script.js"></script>
   </head>
   <body>
 
     <div class="wrapper">
-        <header>
-            <nav>
-                <menu>
-                <ul>
-                    <li class="dropdown">
-                        Destinationer <i class="fas fa-sort-down"></i>
-                        <ul class="dropdown-content">
-                            <li><a href="#">Destination 1</a></li>
-                            <li><a href="#">Destination 2</a></li>
-                            <li><a href="#">Destination 3</a></li>
+
+
+
+
+
+    <div class="visitors_landing">
+            <header>
+                    <nav id="nav">
+                        <menu>
+                        <ul>
+                            <li class="dropdown">
+                                Destinationer <i class="fas fa-sort-down"></i>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">Destination 1</a></li>
+                                    <li><a href="#">Destination 2</a></li>
+                                    <li><a href="#">Destination 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                Rejsetemaer <i class="fas fa-sort-down"></i>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">Destination 1</a></li>
+                                    <li><a href="#">Destination 2</a></li>
+                                    <li><a href="#">Destination 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                Inspiration <i class="fas fa-sort-down"></i>
+                                <ul class="dropdown-content">
+                                    <li><a href="#">Destination 1</a></li>
+                                    <li><a href="#">Destination 2</a></li>
+                                    <li><a href="#">Destination 3</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    <li class="dropdown">
-                        Rejsetemaer <i class="fas fa-sort-down"></i>
-                        <ul class="dropdown-content">
-                            <li><a href="#">Destination 1</a></li>
-                            <li><a href="#">Destination 2</a></li>
-                            <li><a href="#">Destination 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        Inspiration <i class="fas fa-sort-down"></i>
-                        <ul class="dropdown-content">
-                            <li><a href="#">Destination 1</a></li>
-                            <li><a href="#">Destination 2</a></li>
-                            <li><a href="#">Destination 3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                </menu>
-
-                <img class="logo" src="logo.jpg">
-
-                <section class="header_contact">
-                    <span class="phone"><span id="phone_int_code">+45</span> 82 47 35 80</span>
-                    <span class="myTravel red_colour_bg">Min Rejse <i class="fas fa-chevron-right"></i> {{TV}}</span>
-                </section>
-            </nav>
-        </header>
+                        </menu>
+        
+                        <div class="nav_logo">
+                            <img class="logo" src="img/logo.jpg">
+                        </div>
+        
+                        <section class="header_contact">
+                            <span class="phone"><span id="phone_int_code">+45</span> 82 47 35 80</span>
+                            <span id="myTravel" class="myTravel">Min Rejse 
+                                <i id="chevron" class="fas fa-chevron-right hidden"></i>
+                                <i id="suitcase" class="fas fa-suitcase"></i>
+                            </span>
+                        </section>
+                    </nav>
+                </header>
 
 
-
-
-
-
-    <div class="page_section visitors_landing">
-       <div class="centered-landing">
-           <p>Bestil din rejse hos</p>
-           <img src="img/logo.jpg" alt="company logo">
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-           <p>Donec laoreet tellus nec tellus finibus rhoncus. </p>
-        </div>
-
-        <div class="landing-bottom">
-            <div class="cta_section">
-                trust pilot bit
+        <div class="overlay">
+            <div class="centered-landing">
+                <span class="cta_section book_travel_cta">Bestil din rejse hos</span>
+                <img src="img/logo.jpg" alt="company logo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                <p>Donec laoreet tellus nec tellus finibus rhoncus. </p>
             </div>
 
-            <div class="cta_section">
-                Reg number 
+            <div class="landing-bottom">
+                <div class="cta_section">
+                    Bedømt til 4.2 - 5 stjerner på 267 anmeldelser <i class="fas fa-star star_green"></i> Trustpilot
+                </div>
+
+                <div class="cta_section">
+                    Rejsergarantifonden No. 4885 
+                </div>
             </div>
         </div>
     </div>

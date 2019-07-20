@@ -6,6 +6,11 @@
   }
   
 /* globals */
+.hidden {
+  display: none !important;
+}
+
+
 .red_colour_bg {
   background: #f51810;
   color: #fff;
@@ -24,6 +29,7 @@
   width: 50%;
 }
 
+
 .cta_section {
   /* the elements with top bottom border, often drawing attention to something */
   border-top: 1px solid grey;
@@ -32,8 +38,20 @@
 }
 
 
-.wrapper {
 
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+  width: 100%;
+  height: 100%;
 }
 
 nav {
@@ -41,8 +59,10 @@ nav {
     border-bottom: 1px solid;
     display: flex;
     justify-content: space-between;
-    background: cornsilk;
+    background: rgba(0, 0, 0, 0.5);
+    color:#fff;
     padding: 0;
+    height: 4.5em;
 }
 
 
@@ -50,6 +70,7 @@ nav {
 menu {
   display: flex;
   align-items: center;
+  width: 30%;
 }
 
 menu ul {
@@ -101,15 +122,25 @@ li a, .dropbtn {
   }
 
 /* logo */ 
-nav .logo {
+.nav_logo {
+  display: flex;
+  align-items: center;
+}
+.nav_logo img {
   width: 10em;
+  border:.2em solid #fff;
+}
+
+.nav_logo img {
+  width:10em;
 }
 
 /* contact sect */ 
   section.header_contact {
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: flex-end;
+      width:30%;
   }
 
   span.phone {
@@ -121,12 +152,32 @@ nav .logo {
 
   span.myTravel {
     padding: 0 1em;
-    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  span#myTravel .fas {
+      margin-left: .6em;
+  }
+
+  .star_green {
+    color: #00b67a;
+  }
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background:#fff;
+  color:#000;
 }
+
+
+
 
   /* end top level nav */
 
@@ -146,11 +197,60 @@ nav .logo {
   
 
 /* landing */
+.visitors_landing {
+  background: url(img/landingbackground.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  color: #fff;
+  position: relative;
+}
 
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
+/* Bestil din rejse hos border */ 
+.book_travel_cta {
+  border-color: #fff;
+  padding: .5em;
+  display: flex;
+  justify-content: center;
+  width: 10em;
+}
 
+.centered-landing {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+}
 
+.centered-landing img {
+  border: .3em solid #fff;
+  margin: 1em 0;
+}
 
+.centered-landing p {
+  font-size: 1.3em;
+}
+
+.landing-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1em;
+}
 
 /* intro */
 
