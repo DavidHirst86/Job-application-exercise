@@ -9,7 +9,8 @@
 
   <link rel="stylesheet" href="styles.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" type="text/css">
-
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  
   <script src="script.js"></script>
   </head>
   <body>
@@ -110,16 +111,16 @@
         <div class="intro_col_right">
             <div class="cta_section">
                 <div class="intro_cta_rows">
-                    <p>light grey small</p>
-                    <p class="black_text font_weight_bold">Text big black </p>
+                    <p class="grey_text">Ideelt Rejsepunkt</p>
+                    <p class="black_text font_weight_bold">Hele året</p>
                 </div>
                 <div class="intro_cta_rows">                        
-                    <p>light grey small</p>
-                    <p class="black_text font_weight_bold">Text big black </p> 
+                    <p class="grey_text">Indbyggertål</p>
+                    <p class="black_text font_weight_bold">Ca. 327.200.000</p> 
                 </div>
                 <div class="intro_cta_rows">                        
-                    <p>light grey small</p>
-                    <p class="black_text font_weight_bold">Text big black </p>
+                    <p class="grey_text">Antal stater</p>
+                    <p class="black_text font_weight_bold">52 states</p>
                 </div>
             </div>
         </div>
@@ -157,10 +158,10 @@
         <div class="">
             <div class="filter_row">
                 <div class="choose_category filter_buttons">Vælg Rejsetema <i class="fas fa-chevron-down"></i></div>
-                <div id="left_arrow" class="filter_buttons">
+                <div data-action="slideLeft" id="left_arrow" class="filter_buttons">
                     <i class="fas fa-chevron-left"></i>
                 </div>
-                <div id="right_arrow" class="filter_buttons">
+                <div data-action="slideRight" id="right_arrow" class="filter_buttons">
                         <i class="fas fa-chevron-right"></i>
                     </div>
                 <div class="cta_section red_colour_font">
@@ -171,7 +172,140 @@
     </div>
 
     <div class="pop_trips_slider">
-        <div></div>
+        <div class="trips_slider_wrapper">
+            <ul class="carousel" data-target="carousel">
+                <li class="card card1" data-target="card">
+                    <div class="overlay">
+                        <div class="card_top">
+                            <div class="cta_section uppercase cta_white_border card_header">
+                                <p>rejseforslag</p>
+                            </div>
+                                <p class="card_title">Den klassiske rundrejse i California</p>
+                        </div>
+                            <div class="card_bottom cta_section uppercase cta_white_border">
+                                <p>22 dage - fra 20.000 Pr. Pers.</p>
+                            </div>
+                    </div>
+                </li>
+                <li class="card card2" data-target="card">
+                    <div class="overlay">
+                        <div class="card_top">
+                            <div class="cta_section uppercase cta_white_border card_header">
+                                <p>rejseforslag</p>
+                            </div>
+                                <p class="card_title">Den klassiske rundrejse i California</p>
+                        </div>
+                            <div class="card_bottom cta_section uppercase cta_white_border">
+                                <p>22 dage - fra 20.000 Pr. Pers.</p>
+                            </div>
+                    </div>
+                </li>
+                <li class="card card3" data-target="card">
+                    <div class="overlay">
+                        <div class="card_top">
+                            <div class="cta_section uppercase cta_white_border card_header">
+                                <p>rejseforslag</p>
+                            </div>
+                                <p class="card_title">Den klassiske rundrejse i California</p>
+                        </div>
+                            <div class="card_bottom cta_section uppercase cta_white_border">
+                                <p>22 dage - fra 20.000 Pr. Pers.</p>
+                            </div>
+                    </div>
+                </li>
+                <li class="card card4" data-target="card">
+                    <div class="overlay">
+                        <div class="card_top">
+                            <div class="cta_section uppercase cta_white_border card_header">
+                                <p>rejseforslag</p>
+                            </div>
+                                <p class="card_title">Den klassiske rundrejse i California</p>
+                        </div>
+                            <div class="card_bottom cta_section uppercase cta_white_border">
+                                <p>22 dage - fra 20.000 Pr. Pers.</p>
+                            </div>
+                    </div>
+                </li>
+                <li class="card card5" data-target="card">
+                    <div class="overlay">
+                        <div class="card_top">
+                            <div class="cta_section uppercase cta_white_border card_header">
+                                <p>rejseforslag</p>
+                            </div>
+                                <p class="card_title">Den klassiske rundrejse i California</p>
+                        </div>
+                            <div class="card_bottom cta_section uppercase cta_white_border">
+                                <p>22 dage - fra 20.000 Pr. Pers.</p>
+                            </div>
+                    </div>
+                </li>
+                <li class="card card6" data-target="card">
+                    <div class="overlay">
+                        <div class="card_top">
+                            <div class="cta_section uppercase cta_white_border card_header">
+                                <p>rejseforslag</p>
+                            </div>
+                                <p class="card_title">Den klassiske rundrejse i California</p>
+                        </div>
+                            <div class="card_bottom cta_section uppercase cta_white_border">
+                                <p>22 dage - fra 20.000 Pr. Pers.</p>
+                            </div>
+                    </div>
+                </li>
+                <li class="card card7" data-target="card">
+                    <div class="overlay">
+                        <div class="card_top">
+                            <div class="cta_section uppercase cta_white_border card_header">
+                                <p>rejseforslag</p>
+                            </div>
+                                <p class="card_title">Den klassiske rundrejse i California</p>
+                        </div>
+                            <div class="card_bottom cta_section uppercase cta_white_border">
+                                <p>22 dage - fra 20.000 Pr. Pers.</p>
+                            </div>
+                    </div>
+                </li>
+                <li class="card card8" data-target="card">
+                    <div class="overlay">
+                        <div class="card_top">
+                            <div class="cta_section uppercase cta_white_border card_header">
+                                <p>rejseforslag</p>
+                            </div>
+                                <p class="card_title">Den klassiske rundrejse i California</p>
+                        </div>
+                            <div class="card_bottom cta_section uppercase cta_white_border">
+                                <p>22 dage - fra 20.000 Pr. Pers.</p>
+                            </div>
+                    </div>
+                </li>
+                <li class="card card9" data-target="card">
+                    <div class="overlay">
+                        <div class="card_top">
+                            <div class="cta_section uppercase cta_white_border card_header">
+                                <p>rejseforslag</p>
+                            </div>
+                                <p class="card_title">Den klassiske rundrejse i California</p>
+                        </div>
+                            <div class="card_bottom cta_section uppercase cta_white_border">
+                                <p>22 dage - fra 20.000 Pr. Pers.</p>
+                            </div>
+                    </div>
+                </li>
+                <li class="card card10" data-target="card">
+                    <div class="overlay">
+                        <div class="card_top">
+                            <div class="cta_section uppercase cta_white_border card_header">
+                                <p>rejseforslag</p>
+                            </div>
+                                <p class="card_title">Den klassiske rundrejse i California</p>
+                        </div>
+                            <div class="card_bottom cta_section uppercase cta_white_border">
+                                <p>22 dage - fra 20.000 Pr. Pers.</p>
+                            </div>
+                    </div>
+                </li>
+            </ul>
+        </div>       
     </div>
 
 

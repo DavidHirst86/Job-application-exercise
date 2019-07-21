@@ -6,10 +6,13 @@
   }
   
 /* globals */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 .hidden {
   display: none !important;
 }
-
 
 .red_colour_bg {
   background: #f51810;
@@ -30,6 +33,11 @@
 .black_text {
   color:#000;
 }
+
+.sec_intro_text, .grey_text {
+  color:grey;
+}
+
 
 .text_box_left {
   width: 50%;
@@ -330,7 +338,7 @@ li a, .dropbtn {
     }
 
 .intro_cta_rows {
-      margin: .25em 0;
+      margin: .35em 0;
 }
 .intro_cta_rows .black_text {
   font-size: 1.2em;
@@ -367,6 +375,110 @@ li a, .dropbtn {
   right: 0;
   position: absolute;
 }
+
+/*slide show*/
+.pop_trips_slider {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.trips_slider_wrapper {
+  height: 30em;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: all 1s ease;
+}
+
+.card {
+  background: black;
+  min-width: 22em;
+  height: 25em;
+  margin-right: 1rem;
+  display: inline-block;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4em 1em 1em 1em;
+}
+
+.card_top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card_header {
+  width: 50%;
+  text-align: center;
+  padding: .5em;
+}
+.card_header p {
+  font-size: 0.6em;
+}
+.card_title {
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.card .card_bottom p {
+  font-size: .8em;
+}
+
+
+
+.card1 {
+  background:url(img/inspiration/insp1.jpg)
+}
+.card2 {
+  background:url(img/inspiration/insp2.jpg)
+}
+.card3 {
+  background:url(img/inspiration/insp3.jpg)
+}
+.card4 {
+  background:url(img/inspiration/insp4.jpg)
+}
+.card5 {
+  background:url(img/inspiration/insp5.jpg)
+}
+.card6 {
+  background:url(img/inspiration/insp6.jpg)
+}
+.card7 {
+  background:url(img/inspiration/insp7.jpg)
+}
+.card8 {
+  background:url(img/inspiration/insp8.jpg)
+}
+.card9 {
+  background:url(img/inspiration/insp9.jpg)
+}
+.card10 {
+  background:url(img/inspiration/insp10.jpg)
+}
+
+
+
 
 
 
