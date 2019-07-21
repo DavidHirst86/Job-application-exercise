@@ -26,10 +26,6 @@ body {
   color: #1717ae;
 }
 
-.white_text {
-  color:#fff;
-}
-
 .black_text {
   color:#000;
 }
@@ -354,10 +350,6 @@ li a, .dropbtn {
 
 
 /* pop trips */
-.popular_trips {
-
-}
-
 .filter_row {
   display: flex;
   align-items: center;
@@ -374,6 +366,11 @@ li a, .dropbtn {
   margin: 0;
   right: 0;
   position: absolute;
+}
+
+.filter_row ul.dropdown-content {
+  margin-top: 1.1em;
+  left: 1em;
 }
 
 /*slide show*/
@@ -443,8 +440,6 @@ li a, .dropbtn {
 .card .card_bottom p {
   font-size: .8em;
 }
-
-
 
 .card1 {
   background:url(img/inspiration/insp1.jpg)
@@ -820,4 +815,8 @@ footer {
 
 .red_text {
   color: #f51810
+}
+
+.white_text {
+  color:#fff;
 }
