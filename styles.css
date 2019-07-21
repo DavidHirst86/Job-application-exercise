@@ -31,7 +31,7 @@ body {
 }
 
 .sec_intro_text, .grey_text {
-  color:grey;
+  color:#9E9E9E;
 }
 
 
@@ -59,10 +59,15 @@ ul, li {
 
 .cta_section {
   /* the elements with top bottom border, often drawing attention to something */
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+  border-top: 1px solid #9E9E9E;
+  border-bottom: 1px solid #9E9E9E;
   padding: 1em 0;
   margin:1em 0;
+}
+
+.cta_section .fa-chevron-right {
+  font-size: .9em;
+  margin-left: 1em;
 }
 
 .cta_section.two_part_cta_sec {
@@ -94,8 +99,19 @@ button {
   padding: 1.4em;
   cursor: pointer;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #f51810;
+}
+
+q {
+  font-style: italic;
+}
 
 
 
@@ -203,6 +219,7 @@ li a, .dropbtn {
   }
     span#phone_int_code {
         color: #808080;
+        margin: 0 .1em 0 1em;
     }
 
   span.myTravel {
@@ -211,6 +228,8 @@ li a, .dropbtn {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+    margin-left: 1em;
   }
 
   span#myTravel .fas {
@@ -303,6 +322,10 @@ li a, .dropbtn {
   margin-bottom: 1em;
 }
 
+.landing-bottom .cta_section {
+  padding: 1em;
+}
+
 
 
 
@@ -350,6 +373,10 @@ li a, .dropbtn {
 
 
 /* pop trips */
+.popular_trips {
+  margin-top: 5em;
+}
+
 .filter_row {
   display: flex;
   align-items: center;
@@ -358,11 +385,12 @@ li a, .dropbtn {
 }
 
 .filter_buttons {
-  border: 1px solid grey;
+  border: 1px solid #9E9E9E;
   padding: 1em;
+  cursor: pointer;
 }
 
-.filter_row .cta_section {
+.filter_row_link {
   margin: 0;
   right: 0;
   position: absolute;
@@ -488,26 +516,31 @@ li a, .dropbtn {
 .destinations_row {
   display: flex;
   justify-content: space-between;
-  margin: 1em;
   padding: 1em 0;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
 }
 
   .destination_wrapper {
     display: flex;
+    border-top: 1px solid #9E9E9E;
+    border-bottom: 1px solid #9E9E9E;
+    margin-right: 3em;
+    padding: 1em 0;
   }
 
   .destination_details {
-    margin: 0 4em 0 1em;
+    margin: 0 3em 0 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .destination_wrapper img {
-  width: 8em;
-  height: 5em;
+  width: 9em;
+  height: 6em;
+}
+
+.destination_sub_title {
+  margin: .4em 0;
 }
 /* end be inspired */ 
 
@@ -635,6 +668,7 @@ li a, .dropbtn {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-top:2em;
 }
 
 .get_offer button {
@@ -665,13 +699,14 @@ li a, .dropbtn {
 }
 
 .trustpilot_col {
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+  border-top: 1px solid #9E9E9E;
+  border-bottom: 1px solid #9E9E9E;
   margin: 0 1em;
 }
 
 .tp_stars {
   display: flex;
+  margin-top:1em;
 }
 
 .tp_star {
@@ -733,8 +768,8 @@ section.featured_two_content {
     justify-content: space-between;
     margin: 1em;
     padding: 1em 0;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
+    border-top: 1px solid #9E9E9E;
+    border-bottom: 1px solid #9E9E9E;
   }
 
     .team_member_wrapper {
@@ -754,6 +789,10 @@ section.featured_two_content {
       .read_about_team {
         display: inline-flex;
       }
+
+    .our_team_sub_title {
+        margin: .4em 0;
+    }
 /* end our team */ 
 
 
@@ -778,14 +817,13 @@ footer {
 
 .footer_box {
   margin: 2em 1em;
-  min-height: 10em;
+  min-height: 15em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .footer_box_cta {
-  width: 60%;
   color: #f51810;
   margin-top:1em;
 }
@@ -799,7 +837,7 @@ footer {
   justify-content: flex-start;
 }
 .cta-wrap-sidebyside .footer_box_cta {
-  max-width: 8em;
+  max-width: 10em;
 }
 .cta-wrap-sidebyside .footer_box_cta:nth-child(2) {
   margin-left: 3em;
