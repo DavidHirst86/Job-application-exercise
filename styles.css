@@ -27,6 +27,10 @@
   color:#fff;
 }
 
+.black_text {
+  color:#000;
+}
+
 .text_box_left {
   width: 50%;
 }
@@ -295,12 +299,48 @@ li a, .dropbtn {
   margin-bottom: 1em;
 }
 
+
+
+
 /* intro */
+.intro.text_box_left {
+  display: flex;
+  margin: 5em auto;
+}
 
+.intro_col_left {
+  width: 60%;
+}
+.p_margin_top {
+  margin-top: 2em;
+}
 
+.intro_col_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+    .intro_col_right .cta_section {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+.intro_cta_rows {
+      margin: .25em 0;
+}
+.intro_cta_rows .black_text {
+  font-size: 1.2em;
+}
 
 
 /* map*
+
+
+
 
 
 
@@ -310,8 +350,64 @@ li a, .dropbtn {
 
 }
 
+.filter_row {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 3em 0;
+}
+
+.filter_buttons {
+  border: 1px solid grey;
+  padding: 1em;
+}
+
+.filter_row .cta_section {
+  margin: 0;
+  right: 0;
+  position: absolute;
+}
+
+
+
+
+
 
 /* be inspired*/
+ .be_inspired_sec {
+  margin: 4em auto;
+}
+
+.destinations_row {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+  padding: 1em 0;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+  .destination_wrapper {
+    display: flex;
+  }
+
+  .destination_details {
+    margin: 0 4em 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.destination_wrapper img {
+  width: 8em;
+  height: 5em;
+}
+/* end be inspired */ 
+
+
+
+
+
 
 
 

@@ -93,24 +93,35 @@
 
 
 
-    <div class="page_section intro">
-        <div class="col-2">
-            <p>
+    <div class="page_section intro text_box_left">
+        <div class="intro_col_left">
+            <p class="sec_intro_text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
-                Donec laoreet tellus nec tellus finibus rhoncus. 
-                Aliquam rhoncus dapibus augue ut sodales. Integer facilisis iaculis velit et interdum. 
-                Ut consequat pulvinar rutrum. Phasellus ultricies in nunc id malesuada.
+                Donec <a href="#">laoreet</a> tellus nec tellus finibus rhoncus. 
+                Aliquam rhoncus dapibus augue ut sodales.
+            </p>
+            <p class="sec_intro_text p_margin_top">
+                Nam accumsan enim ut erat tincidunt imperdiet. Sed sagittis sapien pretium justo 
+                finibus dapibus. Proin a purus sodales, interdum sapien at, euismod massa. 
+                Donec porttitor dolor libero, vel consectetur sem congue vitae. 
+                Nullam pretium purus et aliquet volutpat.
             </p>
         </div>
-        <div class="footer_box_cta cta_section">
-            <h6>light grey small</h6>
-            <p>Text big black </p>
-            
-            <h6>light grey small</h6>
-            <p>Text big black </p> 
-
-            <h6>light grey small</h6>
-            <p>Text big black </p> 
+        <div class="intro_col_right">
+            <div class="cta_section">
+                <div class="intro_cta_rows">
+                    <p>light grey small</p>
+                    <p class="black_text font_weight_bold">Text big black </p>
+                </div>
+                <div class="intro_cta_rows">                        
+                    <p>light grey small</p>
+                    <p class="black_text font_weight_bold">Text big black </p> 
+                </div>
+                <div class="intro_cta_rows">                        
+                    <p>light grey small</p>
+                    <p class="black_text font_weight_bold">Text big black </p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -120,8 +131,8 @@
 
 
 
-    <div class="page_section map">
-        the map with markers.
+    <div class="map">
+        <iframe src="https://snazzymaps.com/embed/171565" width="100%" height="800px" style="border:none;"></iframe>
     </div>
 
 
@@ -133,19 +144,34 @@
 
     <div class="page_section popular_trips">
         <div class="text_box_left">
-            <h1> Populære rejser</h1>
-            <span>red line</span>
-            <p>
+            <h1>Heading 1</h1>
+            <span class="short_red_line"></span>                            
+            <p class="sec_intro_text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
-                Donec laoreet tellus nec tellus finibus rhoncus. 
-                Aliquam rhoncus dapibus augue ut sodales. Integer facilisis iaculis velit et interdum. 
-                Ut consequat pulvinar rutrum. Phasellus ultricies in nunc id malesuada.
+                Donec laoreet tellus nec tellus finibus rhoncus.
+
+                Aliquam rhoncus dapibus augue ut sodales.
             </p>
         </div>
 
         <div class="">
-            some kinda side scrolling thingie... with big images etc.
+            <div class="filter_row">
+                <div class="choose_category filter_buttons">Vælg Rejsetema <i class="fas fa-chevron-down"></i></div>
+                <div id="left_arrow" class="filter_buttons">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div id="right_arrow" class="filter_buttons">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                <div class="cta_section red_colour_font">
+                Alle vores rejseforslag <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <div class="pop_trips_slider">
+        <div></div>
     </div>
 
 
@@ -153,71 +179,87 @@
 
 
 
-
-
     <div class="page_section be_inspired">
-            <div class="text_box_left">
-                    <h1>Heading 1</h1>
-                    <span>red line</span>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
-                        Donec laoreet tellus nec tellus finibus rhoncus. 
-                        Aliquam rhoncus dapibus augue ut sodales. Integer facilisis iaculis velit et interdum. 
-                        Ut consequat pulvinar rutrum. Phasellus ultricies in nunc id malesuada.
-                    </p>
-            </div>
-        
-                <div class="our_team">
-                    <div class="team_row">
-                        <div class="team_member_wrapper">
-                            <img src="img/team/team1.jpg" alt="name">
-                            <div class="team_member_details">
+        <div class="text_box_left">
+                <h1>Heading 1</h1>
+                <span class="short_red_line"></span>                            
+                <p class="sec_intro_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
+                    Donec laoreet tellus nec tellus finibus rhoncus. 
+                    Aliquam rhoncus dapibus augue ut sodales.
+                </p>
+        </div>
+    
+        <div class="be_inspired_sec">
+                <div class="destinations_row">
+                    <div class="destination_wrapper">
+                        <img src="img/beInspiredImage.jpg" alt="name">
+                        <div class="destination_details">
+                            <h4>Signe Hansen</h4>
+                            <h4 class="blue_text">Rejsekonsulent</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputates finibus rhoncus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="destination_wrapper">
+                        <img src="img/beInspiredImage.jpg" alt="name">
+                        <div class="destination_details">
+                            <h4>Signe Hansen</h4>
+                            <h4 class=" blue_text">Rejsekonsulent</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputates finibus rhoncus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="destinations_row cta_section">
+                    <div class="destination_wrapper">
+                        <img src="img/beInspiredImage.jpg" alt="name">
+                        <div class="destination_details">
+                            <h4>Signe Hansen</h4>
+                            <h4 class=" blue_text">Rejsekonsulent</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputates finibus rhoncus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="destination_wrapper">
+                        <img src="img/beInspiredImage.jpg" alt="name">
+                        <div class="destination_details">
+                            <h4>Signe Hansen</h4>
+                            <h4 class=" blue_text">Rejsekonsulent</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputates finibus rhoncus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destinations_row">
+                        <div class="destination_wrapper">
+                            <img src="img/beInspiredImage.jpg" alt="name">
+                            <div class="destination_details">
                                 <h4>Signe Hansen</h4>
-                                <h4 class="our_team_sub_title">Rejsekonsulent</h4>
+                                <h4 class="blue_text">Rejsekonsulent</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
-                                    Donec laoreet tellus nec tellus finibus rhoncus. Aliquam rhoncus dapibus.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputates finibus rhoncus.
                                 </p>
                             </div>
                         </div>
-                        <div class="team_member_wrapper">
-                            <img src="img/team/team1.jpg" alt="name">
-                            <div class="team_member_details">
+                        <div class="destination_wrapper">
+                            <img src="img/beInspiredImage.jpg" alt="name">
+                            <div class="destination_details">
                                 <h4>Signe Hansen</h4>
-                                <h4 class="our_team_sub_title">Rejsekonsulent</h4>
+                                <h4 class=" blue_text">Rejsekonsulent</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
-                                    Donec laoreet tellus nec tellus finibus rhoncus. Aliquam rhoncus dapibus. 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputates finibus rhoncus.
                                 </p>
                             </div>
                         </div>
                     </div>
-        
-                    <div class="team_row cta_section">
-                        <div class="team_member_wrapper">
-                            <img src="img/team/team1.jpg" alt="name">
-                            <div class="team_member_details">
-                                <h4>Signe Hansen</h4>
-                                <h4 class="our_team_sub_title">Rejsekonsulent</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
-                                    Donec laoreet tellus nec tellus finibus rhoncus. Aliquam rhoncus dapibus.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="team_member_wrapper">
-                            <img src="img/team/team1.jpg" alt="name">
-                            <div class="team_member_details">
-                                <h4>Signe Hansen</h4>
-                                <h4 class="our_team_sub_title">Rejsekonsulent</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate cursus placerat. 
-                                    Donec laoreet tellus nec tellus finibus rhoncus. Aliquam rhoncus dapibus.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- end our team -->
+            </div> 
     </div>
 
 
