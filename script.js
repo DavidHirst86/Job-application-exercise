@@ -76,9 +76,4 @@ rightButton.addEventListener("click", function() {
 })
 
 
-
-
-
-
-
 }) /* end of dom loaded event */
