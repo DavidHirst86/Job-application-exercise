@@ -694,12 +694,17 @@ li a, .dropbtn {
 
 /*should be replaced with SVG / interaction */
 .help_you_img {
-  align-items: center;
+  align-items: flex-end;
 }
 .help_you_img img {
   padding-left: 30%;
 }
-
+.help_you_img svg {
+  max-width: 20em;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+}
 
 
 
@@ -899,6 +904,10 @@ footer {
       margin: 1em;
     }
 
+    button {
+      text-align: left;
+    }
+
     /*nav and landing*/ 
 
 
@@ -946,6 +955,7 @@ footer {
       position: absolute;
       top: 4.5em;
       left: 0;
+      background:#fff;
     }
     
     /* intro section */
@@ -992,6 +1002,7 @@ footer {
         border-bottom: 1px solid #9E9E9E;
         border-top: 1px solid #9E9E9E;
         padding: 1em;
+        margin-right: 0;
     }
 
     .destinations_row {
@@ -1037,6 +1048,18 @@ footer {
     /* help you */
     .help_you {
       flex-direction: column;
+    }
+
+    .get_offer .cta_section {
+      width:100%;
+    }
+
+    .get_offer .cta_section span:nth-child(1) {
+        display: block;
+    }
+
+    .get_offer .cta_section #phone_int_code {
+        margin: 0 .1em 0 1em;
     }
 
 
