@@ -1,3 +1,6 @@
+
+
+
 /* CSS Resets*/ 
 * {
     box-sizing: border-box;
@@ -26,7 +29,7 @@ body {
   color: #1717ae;
 }
 
-.black_text {
+.black_text, a .black_text {
   color:#000;
 }
 
@@ -74,6 +77,10 @@ ul, li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.cat_sec_left {
+  margin-left: 1em;
 }
 
 .cta_white_border {
@@ -136,6 +143,11 @@ nav {
     height: 4.5em;
 }
 
+/* mobile nav */
+.mobile_menu_toggle {
+  display: none;
+
+}
 
 /* Top level nav menu */ 
 menu {
@@ -163,8 +175,12 @@ li a, .dropbtn {
   }
   
   li.dropdown {
-    display: inline-block;
-    margin: 1em;
+    display: flex;
+    margin: .5em;
+  }
+
+  li.dropdown i{
+    padding-left:.3em;
   }
   
   .dropdown-content {
@@ -174,6 +190,7 @@ li a, .dropbtn {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    margin-top: 1.2em;
   }
   
   .dropdown-content a {
@@ -230,6 +247,7 @@ li a, .dropbtn {
     align-items: center;
     font-weight: bold;
     margin-left: 1em;
+    cursor: pointer;
   }
 
   span#myTravel .fas {
@@ -349,7 +367,7 @@ li a, .dropbtn {
   width: 40%;
 }
     .intro_col_right .cta_section {
-      width: 40%;
+      width: 50%;
       height: 100%;
       display: flex;
       justify-content: center;
@@ -426,7 +444,6 @@ li a, .dropbtn {
 }
 
 .card {
-  background: black;
   min-width: 22em;
   height: 25em;
   margin-right: 1rem;
@@ -809,6 +826,7 @@ footer {
   font-size: 1em;
   border-top: 1px solid #928f8f;
   padding: 1em;
+  position: relative;
 }
 
 .col-3 {
@@ -832,6 +850,11 @@ footer {
   color: #928f8f;
 }
 
+.footer_content a {
+  text-decoration: underline;
+  margin-left: 1em;
+}
+
 .cta-wrap-sidebyside {
   display: flex;
   justify-content: flex-start;
@@ -843,12 +866,247 @@ footer {
   margin-left: 3em;
 }
 
+.to_top.blue_text {
+  border: 2px solid;
+  border-radius: 100%;
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 5em;
+  bottom: 4.5em;
+  background: #fff;
+}
+
+/*______________________________________         ____________________________________________*/
+/*______________________________________ MOBILES ____________________________________________*/
+/*______________________________________         ____________________________________________*/
+
+@media only screen and (max-width: 600px) {  
+    /* global */ 
+    .text_box_left {
+      width: 100%;
+    }
+
+    .page_section {
+      width: 100%;
+    }
+
+    .text_box_right {
+      width: 100%;
+      margin: 1em;
+    }
+
+    /*nav and landing*/ 
+
+
+    .header_contact .phone {
+      display: none;
+    }
+
+    .centered-landing {
+      padding: 0 1em;
+      text-align: center;
+    }
+    .centered-landing img {
+        width: 100%;
+    } 
+
+    a#mobile_menu_toggle {
+        width: 30%;
+    }
+    
+    span.myTravel {
+      margin-left: 0; 
+    }
+    span.myTravel {
+      padding: 0 .5em;
+    }
+
+    #mobile_menu_toggle {
+      color: #fff;
+      padding-left: 1em;
+      display: flex;
+      align-items: center;
+    }
+
+    .mobile_menu_toggle {
+      display: block;
+    }
+  
+    .main-nav {
+      display: none;
+    }
+  
+    .menu_active {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 4.5em;
+      left: 0;
+    }
+    
+    /* intro section */
+    .intro_col_left {
+      width: 100%;
+    }
+    .intro.text_box_left {
+      display: block;
+      margin: 1em auto;
+    }
+
+    .intro_col_right {
+      width: 100%;
+    }
+
+    .intro_col_right .cta_section {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+
+    .intro_col_left {
+     width: 100%;
+    }
+
+
+    /* popular section */
+    .pop_trips_slider {
+      justify-content: center;
+    }
+
+
+    /* destinations*/
+    .destinations_row {
+      flex-direction: column;
+      border-top: 0;
+      border-bottom: 0;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .destination_wrapper {
+        margin-bottom: 1em;
+        border-bottom: 1px solid #9E9E9E;
+        border-top: 1px solid #9E9E9E;
+        padding: 1em;
+    }
+
+    .destinations_row {
+      flex-direction: column;
+    }
+
+    .destination_details {
+      margin: 0 1em 0 1em;
+    }
+
+    .filter_row_link {
+      top: 4em;
+    }
+
+    .card {
+      min-width: 100%;
+    }
+
+    /* quote*/
+    .quote {
+      flex-direction: column;
+    }
+
+    .quote_text_col {
+      width: 100%;
+    }
+
+    .quote_img_col {
+      width: 100%;
+    }
+
+    /* featured */
+    .featured {
+      flex-direction: column;
+    }
+
+    .featured_img_col, .featured_img_col img, .featured_text_col {
+      margin: 0;
+      width: 100%;
+    }
+
+
+    /* help you */
+    .help_you {
+      flex-direction: column;
+    }
+
+
+    /* customer feedback */
+    .customer_feedback_trustpilot {
+      margin: 0;
+      flex-direction: column;
+    }
+
+    section.featured_two_content {
+      width: 100%;
+    }
+
+    /* team */
+    .team_row {
+      flex-direction: column;
+      border-top: 0;
+      border-bottom: 0;
+      margin: 0;
+      padding: 0;
+    }
+  
+
+    .team_member_wrapper {
+      margin-bottom: 1em;
+      border-bottom: 1px solid #9E9E9E;
+      border-top: 1px solid #9E9E9E;
+      padding: 1em;
+    }
+
+
+    .team_member_details {
+      margin: 0 0 0 1em;
+    }
+
+
+    /* footer */
+    .footer_menu {
+      flex-direction: column;
+    }
+
+    .col-3 {
+      width: 100%;
+    }
+
+    .footer_content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer_box {
+      text-align: center;
+    }
+
+    .to_top.blue_text {
+      right: 1em;
+      bottom: 6.5em;
+    }
+}
+
 
 
 /* overrides*/
-.black_text {
+.black_text, a .black_text {
   /*used to override phone number in footer fx*/
   color:#000;
+}
+
+.sticky .mobile_menu_toggle {
+  color:#000 !important;
 }
 
 .red_text {

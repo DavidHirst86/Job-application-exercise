@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let mytravel = document.getElementById("myTravel")
     let chevron = document.getElementById("chevron")
     let suitcase = document.getElementById("suitcase")
-
+    
     window.addEventListener('scroll', function() {
         if (window.pageYOffset >= 1) {
             navbar.classList.add("sticky")
@@ -14,10 +14,23 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             navbar.classList.remove("sticky");
             mytravel.classList.remove("red_colour_bg");
-            suitcase.classList.remove("hidden")
-            chevron.classList.add("hidden")            
+            suitcase.classList.remove("hidden");
+            chevron.classList.add("hidden");
         }
     })
+
+
+
+/* nav menu */
+let mobile_menu_toggle = document.querySelector("#mobile_menu_toggle");
+let menubar = document.querySelector(".main-nav");
+
+mobile_menu_toggle.addEventListener("click", function() {
+    console.log("hello world")
+    menubar.classList.toggle("menu_active");
+})
+
+
 
 
 
@@ -61,5 +74,11 @@ rightButton.addEventListener("click", function() {
     carousel.style.transform = `translateX(${offset}px)`;
   }
 })
+
+
+
+
+
+
 
 }) /* end of dom loaded event */

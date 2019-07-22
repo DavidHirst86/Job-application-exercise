@@ -24,37 +24,39 @@
     <div class="visitors_landing">
             <header>
                     <nav id="nav">
-                        <menu>
-                        <ul>
-                            <li class="dropdown">
-                                Destinationer <i class="fas fa-sort-down"></i>
-                                <ul class="dropdown-content">
-                                    <li><a href="#">Destination 1</a></li>
-                                    <li><a href="#">Destination 2</a></li>
-                                    <li><a href="#">Destination 3</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                Rejsetemaer <i class="fas fa-sort-down"></i>
-                                <ul class="dropdown-content">
-                                    <li><a href="#">Destination 1</a></li>
-                                    <li><a href="#">Destination 2</a></li>
-                                    <li><a href="#">Destination 3</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                Inspiration <i class="fas fa-sort-down"></i>
-                                <ul class="dropdown-content">
-                                    <li><a href="#">Destination 1</a></li>
-                                    <li><a href="#">Destination 2</a></li>
-                                    <li><a href="#">Destination 3</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                            <a id="mobile_menu_toggle" href="#menu" class="mobile_menu_toggle">Menu</a>
+
+                        <menu id="menubar" class="main-nav" role="navigation">
+                            <ul>
+                                <li class="dropdown">
+                                    Destinationer <i class="fas fa-sort-down"></i>
+                                    <ul class="dropdown-content">
+                                        <li><a href="#">Destination 1</a></li>
+                                        <li><a href="#">Destination 2</a></li>
+                                        <li><a href="#">Destination 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    Rejsetemaer <i class="fas fa-sort-down"></i>
+                                    <ul class="dropdown-content">
+                                        <li><a href="#">Destination 1</a></li>
+                                        <li><a href="#">Destination 2</a></li>
+                                        <li><a href="#">Destination 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    Inspiration <i class="fas fa-sort-down"></i>
+                                    <ul class="dropdown-content">
+                                        <li><a href="#">Destination 1</a></li>
+                                        <li><a href="#">Destination 2</a></li>
+                                        <li><a href="#">Destination 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </menu>
         
                         <div class="nav_logo">
-                            <img class="logo" src="img/logo.jpg">
+                            <a href="#"><img class="logo" src="img/logo.jpg"></a>
                         </div>
         
                         <section class="header_contact">
@@ -726,7 +728,7 @@
                 </div>
             </div>
 
-            <div class="team_row cta_section">
+            <div class="team_row">
                 <div class="team_member_wrapper">
                     <img src="img/team/team3.jpg" alt="name">
                     <div class="team_member_details">
@@ -862,6 +864,12 @@
     </div>
 
     <footer>
+        <a href="#" class="">
+            <div class="to_top blue_text">
+                <i class="fas fa-arrow-up"></i>
+            </div>
+        </a>
+
         <section class="page_section footer_content">
             <span><i class="far fa-copyright"></i> 2017 USA tours. All rights reserved</span>
             <a href="#">Privacy Policy</a>
